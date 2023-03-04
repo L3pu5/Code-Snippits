@@ -1,3 +1,1 @@
-foreach ($x in Get-ChildItem) {
-Expand-Archve -Path ".\$x"
-}
+gci | % {Expand-Archive $_}
